@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/AbstractOdeSolver.o"
   "CMakeFiles/main.dir/ForwardEulerSolver.o"
   "CMakeFiles/main.dir/RungeKuttaSolver.o"
+  "CMakeFiles/main.dir/AdamsBashforth.o"
   "main.pdb"
   "main"
 )

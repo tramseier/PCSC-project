@@ -11,11 +11,12 @@
 #include "AbstractOdeSolver.hpp"
 #include "ForwardEulerSolver.hpp"
 #include "RungeKuttaSolver.hpp"
+#include "AdamsBashforth.hpp"
 
 double fRhs(double y, double t) { return 1 + t; } //set the function to solve
 
 int main(int argc, char *argv[]) {
-  if (argc != 3) {
+  if (argc != 4) {
     std::cout << "Missing paremeter. Please run as:\n"
               << "  ./main <stepsize_euler> <stepsize_rk>\n"
               << "Aborting.\n";
@@ -62,6 +63,22 @@ int main(int argc, char *argv[]) {
     std::cout << "Couldn't open solution_rk.dat. Aborting." << std::endl;
     return 1;
   }
+
+    double stepSizeAd = std::atof(argv[3]);
+    pSolver = new AdamsBashforthSolver;
+    pSolver->SetInitialValue(initialValue);
+    pSolver->SetTimeInterval(initialTime, finalTime);
+    pSolver->SetStepSize(stepSizeAd);
+    pSolver->SetRightHandSide(fRhs);
+
+    std::ofstream AdSolutionFile("solution_ad.dat");
+    if (AdSolutionFile.is_open()) {
+        pSolver->SolveEquation(AdSolutionFile);
+        AdSolutionFile.close();
+    } else {
+        std::cout << "Couldn't open solution_ad.dat. Aborting." << std::endl;
+        return 1;
+    }
 
   return 0;
 }

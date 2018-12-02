@@ -7,5 +7,5 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(main main.cpp
                AbstractOdeSolver.cpp ForwardEulerSolver.cpp
-               RungeKuttaSolver.cpp)
+               RungeKuttaSolver.cpp AdamsBashforth.cpp)
                

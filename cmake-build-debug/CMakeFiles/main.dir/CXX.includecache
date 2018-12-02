@@ -10,25 +10,17 @@
 ostream
 -
 
-/home/thomas/PCSC_project/ForwardEulerSolver.hpp
-AbstractOdeSolver.hpp
-/home/thomas/PCSC_project/AbstractOdeSolver.hpp
-
-/home/thomas/PCSC_project/RungeKuttaSolver.hpp
-AbstractOdeSolver.hpp
-/home/thomas/PCSC_project/AbstractOdeSolver.hpp
-
-/home/thomas/PCSC_project/main.cpp
-cstdlib
+/home/thomas/PCSC_project/AdamsBashforth.cpp
+AdamsBashforth.hpp
+/home/thomas/PCSC_project/AdamsBashforth.hpp
+cmath
 -
-fstream
+vector
 -
 iostream
 -
+
+/home/thomas/PCSC_project/AdamsBashforth.hpp
 AbstractOdeSolver.hpp
 /home/thomas/PCSC_project/AbstractOdeSolver.hpp
-ForwardEulerSolver.hpp
-/home/thomas/PCSC_project/ForwardEulerSolver.hpp
-RungeKuttaSolver.hpp
-/home/thomas/PCSC_project/RungeKuttaSolver.hpp
 
