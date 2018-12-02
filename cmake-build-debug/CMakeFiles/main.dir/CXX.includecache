@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/PCSC_project/AbstractOdeSolver.hpp
+ostream
+-
+
+/home/thomas/PCSC_project/ForwardEulerSolver.hpp
+AbstractOdeSolver.hpp
+/home/thomas/PCSC_project/AbstractOdeSolver.hpp
+
+/home/thomas/PCSC_project/RungeKuttaSolver.hpp
+AbstractOdeSolver.hpp
+/home/thomas/PCSC_project/AbstractOdeSolver.hpp
+
+/home/thomas/PCSC_project/main.cpp
+cstdlib
+-
+fstream
+-
+iostream
+-
+AbstractOdeSolver.hpp
+/home/thomas/PCSC_project/AbstractOdeSolver.hpp
+ForwardEulerSolver.hpp
+/home/thomas/PCSC_project/ForwardEulerSolver.hpp
+RungeKuttaSolver.hpp
+/home/thomas/PCSC_project/RungeKuttaSolver.hpp
+
